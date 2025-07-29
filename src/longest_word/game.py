@@ -12,7 +12,7 @@ class Game:
 
     def is_valid(self, word: str) -> bool:
         """Return True if and only if the word is valid, given the Game's grid"""
-        '''if not word:
+        if not word:
             return False
         letters = self.grid.copy() # Consume letters from the grid
         for letter in word:
@@ -20,7 +20,6 @@ class Game:
                 letters.remove(letter)
             else:
                 return False
-        return True'''
         return self.__check_dictionary(word)
 
     @staticmethod

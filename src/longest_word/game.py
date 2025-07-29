@@ -27,4 +27,5 @@ class Game:
     def __check_dictionary(word):
         response = requests.get(f"https://dictionary.lewagon.com/{word}")
         json_response = response.json()
+
         return json_response['found']
